@@ -1,0 +1,97 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+#game {
+  width: 100%;
+  height: 100%;
+  background-color:#3C444F;
+}
+
+#bazar {
+  width: 62%;
+  height: 62px;
+  position: relative;
+  background-color: #666;
+  border-radius: 5px;
+}
+
+
+.bone {
+  background-image: url('../images/bones2.png');
+  width: 26px;
+  height: 50px;
+  background-size: 224px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out; 
+  transform-origin: 50% 50%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  z-index: 100;
+}
+
+.bone-played {
+  background-image: url('../images/bones2.png');
+  width: 26px;
+  height: 50px;
+  background-size: 224px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out; 
+  transform-origin: 50% 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+
+.path{
+  width: 26px;
+  height: 50px;
+  background-color: whitesmoke;
+  border-radius: 3px; 
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  transform-origin: 50% 50%;  
+  box-shadow: 0 0 0 rgba(255,255,255, 0.8);
+  animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.8);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.8);
+    box-shadow: 0 0 0 0 rgba(255,255,255, 0.8);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+      box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+      box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+  }
+}
